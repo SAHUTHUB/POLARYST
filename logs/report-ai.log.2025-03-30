@@ -1,0 +1,7 @@
+2025-03-30 18:37:56,818 - INFO - Using LLM: gpt
+2025-03-30 18:37:56,819 - INFO - Serialized input conversation. Now generating report skeleton...
+2025-03-30 18:38:01,128 - INFO - Report skeleton generated: [{'heading': 'ภาพรวมของบริษัท', 'sub_headings': ['ข้อมูลทั่วไปของบริษัท', 'เป้าหมายทางธุรกิจและวิสัยทัศน์']}, {'heading': 'ผลประกอบการรายไตรมาส', 'sub_headings': ['รายได้และกำไรขั้นต้น', 'ค่าใช้จ่ายในการดำเนินงาน', 'สถานะทางการเงิน']}, {'heading': 'ผลประกอบการรายปี', 'sub_headings': ['ยอดขายและกำไรสุทธิ', 'อัตราส่วนทางการเงิน', 'การเปรียบเทียบกับปีก่อนหน้า']}, {'heading': 'งบกำไรขาดทุน', 'sub_headings': ['รายละเอียดรายได้', 'การวิเคราะห์ความสามารถในการทำกำไร', 'ข้อกังวลเกี่ยวกับอัตรากำไร']}, {'heading': 'งบกระแสเงินสด', 'sub_headings': ['กระแสเงินสดจากการดำเนินงาน', 'กระแสเงินสดจากกิจกรรมการลงทุน', 'กระแสเงินสดจากกิจกรรมการจัดหาเงิน']}, {'heading': 'การวิเคราะห์ปัญหาธุรกิจ', 'sub_headings': ['การวิเคราะห์อัตราส่วนทางการเงิน', 'ความเสถียรภาพทางการเงิน', 'การบริหารความเสี่ยง']}, {'heading': 'สรุปและข้อเสนอแนะ', 'sub_headings': ['สรุปผลการวิเคราะห์', 'คำแนะนำสำหรับนักลงทุน [ซื้อ/ถือ/ขาย]']}]
+
+Now generating report sections with `section_dedup` set to True...
+2025-03-30 18:40:59,608 - INFO - HTML report successfully generated! Converting HTML to PDF file now!
+2025-03-30 18:41:08,177 - INFO - PDF report on Stock Analysis Report for Univanich Palm Oil PCL generated and saved to /Users/sahutsky22/Downloads/ยังไม่แก้/reports/Stock_Analysis_Report_for_Univanich_Palm_Oil_PCL.pdf

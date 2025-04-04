@@ -1,0 +1,7 @@
+2025-03-11 10:33:24,417 - INFO - Using LLM: gpt
+2025-03-11 10:33:24,417 - INFO - Serialized input conversation. Now generating report skeleton...
+2025-03-11 10:33:30,326 - INFO - Report skeleton generated: [{'heading': 'ภาพรวมบริษัท', 'sub_headings': ['ข้อมูลทั่วไป', 'ความสำเร็จทางธุรกิจ']}, {'heading': 'การวิเคราะห์ประจำไตรมาส', 'sub_headings': ['การวิเคราะห์รายได้', 'การวิเคราะห์กำไรสุทธิ', 'การวิเคราะห์กระแสเงินสด', 'การวิเคราะห์อัตราส่วนทางการเงิน']}, {'heading': 'การวิเคราะห์ประจำปี', 'sub_headings': ['ภาพรวมรายได้และกำไรสุทธิ', 'การเปรียบเทียบกับปีที่ผ่านมา', 'การวิเคราะห์งบกระแสเงินสด', 'การวิเคราะห์โครงสร้างสินทรัพย์']}, {'heading': 'การวิเคราะห์ปัญหาธุรกิจ', 'sub_headings': ['อัตราส่วนทางการเงิน', 'ความเสี่ยงและความกังวล']}, {'heading': 'บทสรุปและข้อเสนอแนะ', 'sub_headings': ['สรุปผลการวิเคราะห์', 'คำแนะนำสำหรับนักลงทุน']}]
+
+Now generating report sections with `section_dedup` set to True...
+2025-03-11 10:36:55,195 - INFO - HTML report successfully generated! Converting HTML to PDF file now!
+2025-03-11 10:37:02,992 - INFO - PDF report on Stock Analysis Report for DELTA.BK generated and saved to /Users/sahutsky22/Downloads/ยังไม่แก้/reports/Stock_Analysis_Report_for_DELTA.BK.pdf

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Polarlyst</title>
+<style>
+        body {
+                 font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                 background-color: #ffffff;
+                 margin: 0;
+                 padding: 0;
+             }
+
+             .container {
+                 width: 21cm;
+                 margin: 20px auto;
+                 background-color: #ffffff;
+                 box-shadow: 0 4px 8px rgb(255, 255, 255);
+                 padding: 20px;
+                 height: auto;
+                 min-height: 29.7cm;
+             }
+
+             /* ✅ --- Header Section --- (นำ Style มาจาก html_element.py) */
+             .header {
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+                 background-color: #6dc5ff;
+                 border-radius: 5px;
+                 min-height: 150px;
+                 position: relative;
+                 box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+                 padding: 0px;
+             }
+             .header .logo {
+                 display: flex;
+                 align-items: center;
+             }
+             .header .logo img {
+                 height: 160px;
+                 border: 20px;
+             }
+
+             .header .subtitle {
+                 font-size: 18px;
+                 color: #ffffff;
+                 text-align: right;
+                 margin-right: 20px;
+                 line-height: 1.5;
+             }
+
+             .header-half-circle {
+                 position: absolute;
+                 top: 50%;
+                 left: 52%;
+                 transform: translate(-50%, -50%);
+                 width: 120px;
+                 height: 120px;
+                 background-color: #ffffff;
+                 border-top-right-radius: 120px;
+                 border-bottom-right-radius: 120px;
+                 opacity: 1;
+             }
+             /* ✅ --- Header Section --- (จบ) */
+
+             /* ✅ ทำให้ Left Panel อยู่ซ้าย และ Content อยู่ขวา */
+             .content-container {
+                 display: flex;
+                 align-items: flex-start;
+                 gap: 20px; /* ระยะห่างระหว่าง Left Panel และ Right Section */
+             }
+
+             /* Left Panel & Key Messages */
+             .summary-panel-container {
+                 max-width: 35%; /* ให้ Left Panel ใช้พื้นที่ 30% ของหน้าจอ */
+                 display: flex;
+                 flex-direction: column;
+                 gap: 20px;
+                 background-color: #ffffff;
+                 padding: 0px;
+                 border-radius: 10px;
+                 border: 0px solid #ffffff;
+                 margin-top: 3%;
+
+             }
+
+             .left-panel, .key-message-panel, .stock-chart-panel-separate { /* ✅ เพิ่ม .stock-chart-panel-separate ใน Selector */
+                 width: 100%;
+                 background-color: #ffffff;
+                 border-radius: 5px;
+                 overflow: hidden;
+                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             }
+
+             .left-header, .key-message-header, .stock-chart-header-separate { /* ✅ เพิ่ม .stock-chart-header-separate ใน Selector */
+                 background-color: #6dc5ff;
+                 color: #ffffff;
+                 padding: 12px 20px;
+                 font-size: 18px;
+                 font-weight: bold;
+                 text-align: left;
+                 border-bottom: 2px solid #ffffff;
+                 text-transform: uppercase;
+             }
+
+             .left-content, .key-message-content, .stock-chart-content-separate { /* ✅ เพิ่ม .stock-chart-content-separate ใน Selector */
+                 padding: 15px 20px;
+                 background-color: #f1f7fb;
+             }
+
+             .left-content p, .key-message-content p, .stock-chart-content-separate p { /* ✅ เพิ่ม .stock-chart-content-separate ใน Selector */
+                 font-size: 14px;
+                 color: rgb(7, 7, 7);
+                 margin: 10px 0;
+             }
+
+             /* Right Section */
+             .right-section {
+                 flex-grow: 1; /* ให้ขยายเต็มพื้นที่ที่เหลือ */
+                 background-color: #fdfdfd;
+                 padding: 20px;
+                 border-radius: 5px;
+                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                 margin-bottom: 1000px;
+             }
+
+             /* Headings */
+             h2 {
+                 font-size: 24px;
+                 color: #51b4f6;
+                 border-bottom: 2px solid #eee;
+                 padding-bottom: 5px;
+             }
+
+             h3 {
+                 font-size: 18px;
+                 color: #000000;
+                 margin-top: 15px;
+             }
+        @media print {
+            .pagebreak {
+                page-break-before: always;
+                page-break-after: always;
+            }
+            .container {
+                page-break-inside: avoid;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<img alt="Polarlyst Logo" src="/Users/sahutsky22/Downloads/ยังไม่แก้/assets/logos/Polarlyst.jpg"/>
+</div>
+<div class="subtitle">
+<span id="stock-name">Univanich Palm Oil PCL</span><br/>
+    (<span id="stock-symbol">UVAN</span>)
+</div>
+<div class="header-half-circle"></div>
+</div>
+<div class="content-container">
+<div class="summary-panel-container">
+<div class="left-panel">
+<div class="left-header">Out Perform</div>
+<div class="left-content">
+<p>Price as of: ราคาหุ้น UVAN.BK วันนี้คือ 9.15 บาท (21 มี.ค. 2025)</p>
+<p>12M target price: ราคาเป้าหมาย 12 เดือน: 10.00 บาท
+
+ที่มา: อิงจากการเติบโตและปันผล</p>
+<p>Unchanged/Revised: Revised - ปรับตามกำไรที่ลดลง</p>
+<p>Upside/Downside: Upside: 10% บ่งบอกถึงโอกาสเติบโตของราคา.</p>
+</div>
+</div>
+<div class="key-message-panel">
+<div class="key-message-header">Key Messages</div>
+<div class="key-message-content">
+<p>1. Univanich Palm Oil PCL อนุมัติจ่ายเงินปันผลสุดท้ายจากผลประกอบการปี 2024 ที่ 0.60 บาทต่อหุ้น ซึ่งบ่งบอกถึงสถานะทางการเงินที่แข็งแกร่ง
+2. มีกำไรสุทธิ 1.27 พันล้านบาทจากยอดขาย 13.55 พันล้านบาท สะท้อนถึงประสิทธิภาพในการดำเนินงานที่ดี</p>
+</div>
+</div>
+<div class="stock-chart-panel-separate"> <div class="stock-chart-header-separate">Stock Chart</div>
+<div class="stock-chart-content-separate"><img src="/Users/sahutsky22/Downloads/ยังไม่แก้-2/assets/UVAN_chart_line.png" style="max-width:100%; height:auto;"/></div> </div> </div>
+<div class="right-section"><h2>Executive Summary</h2><h3>About Company</h3><ul>
+<li>Univanich Palm Oil PCL plans to hold its Annual General Meeting of Shareholders for 2025 on April 25, 2025.</li>
+<li>The company has approved a dividend payment of 0.60 THB per share from its 2024 performance.</li>
+<li>Key dates include the record date for dividend eligibility on March 14, 2025, and dividend payment on May 23, 2025.</li>
+</ul><h3>Areas of Concern</h3><ul>
+<li>Univanich reported a revenue of 13.55 billion THB and a net profit of 1.27 billion THB for the year 2024.</li>
+<li>The current stock price is 9.15 THB as of March 21, 2025, reflecting a dividend yield of 10.93%.</li>
+<li>The Price to Earnings (PE) ratio stands at 6.78, indicating potential undervaluation.</li>
+</ul><h3>Key Findings</h3><ul>
+<li>Positive cash flow from operations highlights effective cash generation from business activities.</li>
+<li>Investment in fixed assets should align with revenue growth to reflect efficient capacity expansion.</li>
+</ul><h3>Insights</h3><h3>Conclusion</h3><ul>
+<li>The recommendation is to Hold due to strong dividend payment capability and operational efficiency.</li>
+<li>Further financial indicators should be considered to assess future risk exposure.</li>
+</ul></div>
+</div>
+</div>
+</body>
+</html>
